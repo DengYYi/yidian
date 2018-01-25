@@ -43,7 +43,205 @@
 	<div style="clear:both"></div>
 	
 	<!-- 注册 登录 的头部 -->
-	<div class="no-goods">
+	
+	<div class="shopping-cart">
+		<div class="price-red-color">全部商品
+				<span class="sum">1</span>
+		</div>
+		<!-- 租赁商品 -->
+		<div class="leased-goods">
+					<div class="goods-tit">
+						<label><input type="checkbox" class="lease-product-cb-all">租赁商品</label>
+						<span>已为您减免
+							<i class="price-red-color relief-deposit-total">0.00</i>元押金，现可用额度为
+							<i class="price-red-color available-amount">0.00</i>元
+						</span>
+					</div>
+					<div class="lease-product">
+						<div class="product-tit">
+							<div class="width-468-px">商品</div>
+							<div class="width-204-px">单价（元）</div>
+							<div class="width-160-px">数量</div>
+							<div class="width-48-px">首付期数</div>
+							<div class="width-178-px">应付小计（元）</div>
+							<div class="width-128-px">操作</div>
+						</div>
+						
+							
+								<div id="carts_product_row_76005">
+									<div class="product-detail on">
+										<!-- 商品 -->
+										<div class="product-info width-468-px">
+											<b>
+												<input type="checkbox" id="p_cb_76005" class="lease-product-cb p-cb" value="76005" checked="checked">
+												<input type="hidden" id="isSale_76005" value="0">
+												<input type="hidden" id="serviceId_76005" value="1">
+											</b>
+											<div class="product-box clearfix">
+												<div class="pic">
+													<a target="_blank" href="product.html">
+														
+															
+																<img src="https://edzimg.edianzu.com/product/2016/12/3478f424913a70b26cefadf3f0d59cb4.png?x-oss-process=image/resize,m_fill,h_360,w_360" title="ThinkPad T420 极速版 14.0英寸笔记本电脑(i5/4GB/120GB SSD/集显)">
+															
+															
+														
+													</a>
+												</div>
+												<div class="txt">
+													<a target="_blank" href="queryProductDetail?id=100245">ThinkPad T420 极速版 14.0英寸笔记本电脑(i5/4GB/120GB SSD/集显)</a>
+													<span class="rent-type" id="rent_type_title_76005">
+														随租随还
+													</span>
+												</div>
+											</div>
+											
+											<div class="service-box">
+												
+												<div class="service-add-main">
+													
+												</div>
+											</div>
+										</div>
+
+										<!-- 单价（元） -->
+										<div class="lease-product-price">
+											<div class="month-rent-box">
+												
+												<div class="month-rent-label">月租金 :</div>
+												<div class="month-rent-list">
+												
+			                                          
+			                                               <div class="month-rent-item">
+			                                               	   95.00（1-12月）
+		                                                   </div>
+			                                               
+			                                               <div class="month-rent-item">
+			                                               	   90.00（13-24月）
+		                                                   </div>
+			                                               
+			                                         
+			                                        
+												</div>
+											</div>
+											<div class="month-rent-box">
+												<div class="month-rent-label">押金 :</div>
+												<div class="month-rent-list">
+													<div class="month-rent-item" id="deposit_76005">1800.00</div>
+												</div>
+											</div>
+										</div>
+
+										<!-- 数量 -->
+										<div class="product-num">
+											<div class="number clearfix">
+												<a class="num-reduce on">-</a>
+												<a class="num">
+												   
+																<input id="num_76005" class="ipt-num" data_id="76005" data_pid="100245" type="text" value="1" data-issub="false">
+															
+														
+													
+												</a>
+												<a class="num-add">+</a>
+											</div>
+
+														<input id="num_h_76005" data_id="76005" type="hidden" value="1">
+													
+												
+											
+
+											<!-- 可升级商品不判断库存 -->
+											
+												<div class="stock-box">
+													
+												
+												</div>
+											
+										</div>
+
+										<!-- 首付期数 -->
+										<div class="down-pay-month" id="downPayMonth_76005">1</div>
+
+										<!-- 应付小计（元） -->
+										<div class="lease-product-sum">
+											<p>
+												<span>首付租金 :</span>
+												<i id="rentMonth_sum_76005">95.00</i>
+											</p>
+											<p>
+												<span>押金小计 :</span>
+												<i id="deposit_sum_76005">1800.00</i>
+											</p>
+										</div>
+
+										<!-- 操作 -->
+										<div class="product-handle width-128-px">
+											<a class="delete" data_id="76005">删除</a>
+											<a class="goods-notice" id="goods_notice_76005" data_id="100245">
+												
+											</a>
+										</div>
+									</div>
+
+									<div class="product-rent-info">
+										<div class="product-rent-month">
+											
+														本商品租期为<i>24</i>个月，租期结束后设备归还易点租
+											
+										</div>
+
+										<div class="product-rent-date">
+											<span>起租日期：</span>
+											<input type="text" id="startRentDate_76005" data_id="76005" class="start-rent-date" value="2018-01-28" readonly="readonly">
+										</div>
+									</div>
+								</div>
+							
+						
+					</div>
+				</div>
+		<!-- 销售商品 -->
+		<!-- 结算部分 -->
+		<div class="bill">
+				<div class="bill-tit clearfix">
+					<div class="fl">
+						<label><input type="checkbox" class="product-cb-all"> 全选</label>
+						<a href="javascript:;" id="del_selected">删除选中商品</a>
+						<a href="javascript:;" id="clear_carts">清除购物车</a>
+					</div>
+					<div class="fr">
+						<span>已选租赁商品<i id="selected_zl_sum">1</i>件</span>
+						<span>已选销售商品<i id="selected_sale_sum">0</i>件</span>
+					</div>
+				</div>
+				<ul class="bill-detail">
+					<li class="billone">
+						<span>应付押金：</span>
+						<i class="pay-deposit-total">1800.00</i>
+						（押金总金额：<b class="deposit-total">1800.00</b>； 本次为您减免押金：<b class="relief-deposit-total">0.00</b>）
+					</li>
+					<li class="billone two">
+						<span>应付租金：</span>
+						<i class="pay-rent-total">95.00</i>
+					</li class="billone">
+
+					
+
+					<li class="billone three">
+						<span>增值保障：</span>
+						<i class="added-service-insurance">0.00</i>
+					</li>
+					<li class="billone four">
+						<span>应付总计：</span>
+						<strong class="pay-total">1895.00</strong>
+					</li>
+					<li class="billone"><a href="order.html" style="font-size: 24px; color:red;">去结算</a><input type="button" class="settle-accounts" value="去结算"></li>
+				</ul>
+		</div>
+	</div>
+
+	<div class="no-goods" style="display: none">
 			<p>购物车空空的哦，您再逛逛~<a href="index.html"><img src="https://resources.edianzu.com/mall_new/20180116_1/images/shootIco.gif">去选购 &gt;</a>
 			</p>
 	</div>
@@ -125,13 +323,13 @@
 	</div>
 	<!-- 右侧悬浮 -->
 	<div class="moquu_chat">
-		<a href="http://webim.qiao.baidu.com//im/index?siteid=7022289&ucid=10265998&qq-pf-to=pcqq.temporaryc2c"></a>
+		<a href="#"></a>
 	</div>
 	<div class="moquu_guide">
 		<a href="https://www.edianzu.com/steps"></a>
 		<div class="zuji_bz">
 			租机步骤
-			<img src="https://www.edianzu.com/images/sanjiao_06.png" alt="">
+			<img src="#" alt="">
 		</div>
 	</div>
 	<div class="moquu_wxin">
@@ -148,4 +346,21 @@
 </body>
 <script src="script/jquery-3.2.1.js"></script>
 <script src="script/jquery.cookie.js"></script>
+<!-- <script src="script/shoppingcar.js"></script> -->
+<script>
+	
+	var acookie=$.cookie("shopping_car")
+	if (acookie) {
+		var $goods = `<ul>
+						  <li>
+
+
+						  </li>
+					  </ul>`
+
+	}
+	
+
+
+</script>
 </html>

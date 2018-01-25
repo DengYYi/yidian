@@ -5,6 +5,8 @@ requirejs.config({
 		ajax:"script/ajax",
 		banner:"script/banner",
 		floor:"script/floor",
-		stairs:"script/stairs"
+		stairs:"script/stairs",
+		cookie:"script/jquery.cookie",
+		shoppingcar:"script/shoppingcar"
 	}
 })

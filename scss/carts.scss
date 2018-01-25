@@ -1,6 +1,349 @@
 @import "reset" ;
 @import "mixin";
+
+
+
+.shopping-cart{
+	margin: 0 auto;
+    width: 1200px;
+    .price-red-color{
+    	color:red;
+    }
+    .goods-tit{
+    	height: 38px;
+    	line-height: 38px;
+    	label{
+    		padding-left: 10px;
+		    font-size: 17px;
+		    color: #37a3fe;
+		    background: url(https://resources.edianzu.com/mall_new/20180116_1/images/bt_leftx_14.png) left center no-repeat;
+    	}
+    	input{
+    		margin-right: 10px;
+    	}
+    	span{
+    		padding: 0 8px;
+    		font-size:14px;
+    	}
+    }
+    .lease-product{
+    	border: 1px solid #e9ebed;
+    	border-bottom: none;
+    	.product-tit{
+    		height: 38px;
+		    line-height: 38px;
+		    font-size: 12px;
+		    color: #666d71;
+		    border-bottom: 2px solid #e9ebed;
+		    background-color: #f5f5f5;
+		    clear: both;
+		    div{
+		    	float: left;
+    			text-align: center;
+		    }
+		    .width-468-px{
+		    	width:468px;
+		    }
+		    .width-204-px{
+		    	width: 204px;
+		    }
+		    .width-160-px{
+		    	width:160px;
+		    }
+		    .width-48-px{
+		    	width: 48px;
+		    }
+		    .width-178-px{
+		    	width:178px;
+		    }
+		    .width-128-px{
+		    	width:128px;
+		    }
+    	}
+    	.product-detail{
+			padding-bottom: 15px;
+		    font-size: 12px;
+		    color: #666d71;
+		    clear: both;
+		    overflow: hidden;
+		    &>div{
+		    	float:left;
+		    }
+		    .product-info{
+		    	width:468px;
+		    	b{
+		    		position: absolute;
+				    left: 20px;
+				    top: 52px;
+		    	}
+		    	.product-box{
+		    		margin-left: 50px;
+				    padding-top: 18px;
+				    width: 400px;
+				    .pic{
+				    	float: left;
+					    width: 84px;
+					    height: 84px;
+					    border: 2px solid #e9ebed;
+					    a{
+					    	img{
+					    		padding: 2px;
+							    width: 80px;
+							    height: 80px;
+					    	}
+					    }
+				    }
+				    .txt{
+				    	position: relative;
+					    float: right;
+					    width: 300px;
+					    height: 84px;
+					    line-height: 20px;
+					    a{
+					    	color: #000;
+					    }
+					    span{
+					    	position: absolute;
+						    left: 0;
+						    bottom: 0;
+						    width: 60px;
+						    height: 18px;
+						    line-height: 18px;
+						    color: #fff;
+						    text-align: center;
+						    background-color: #fe4979;
+					    }
+					    .service-box{
+					    	margin: 10px 0 0 50px;
+    						line-height: 22px;
+    						.service-add-main{
+    							float: left;
+    							color: #333;
+    						}
+					    }
+				    }
+		    	}
+		    }
+		    .lease-product-price{
+		    	margin-top: 10px;
+			    width: 204px;
+			    color: #000;
+			    .month-rent-box{
+			    	margin: 6px 0;
+			    	.month-rent-label{
+			    		float: left;
+					    padding: 0 5px;
+					    width: 56px;
+					    height: 24px;
+					    line-height: 24px;
+					    text-align: right;
+			    	}
+			    	.month-rent-list{
+			    		float: left;
+					    padding: 0 5px;
+					    width: 128px;
+					    .month-rent-item{
+					    	height: 24px;
+    						line-height: 24px;
+					    }
+			    	}
+			    }
+		    }
+		    .product-num{
+		    	width: 160px;
+			    height: auto;
+			    text-align: center;
+			    .number{
+			    	margin: 22px 0 0 40px;
+				    width: 78px;
+				    height: 20px;
+				    border: 1px solid #ccc;
+				    background-color: #fff;
+				    a{
+				    	float: left;
+					    display: block;
+					    margin: 0;
+					    padding: 0;
+					    width: 19px;
+					    height: 18px;
+					    line-height: 18px;
+					    text-align: center;
+				    }
+				    .num-reduce{
+				    	border-right: 1px solid #ccc;
+				    }
+				    .num-add{
+				    	border-left: 1px solid #ccc;
+				    }
+				    .num{
+				    	width: 38px;
+    					overflow: hidden;
+    					input{
+    						padding: 0;
+						    width: 100%;
+						    height: 100%;
+						    text-align: center;
+						    border: none;
+						    background: transparent;
+    					}
+				    }
+			    }
+			    .stock-box{
+			    	margin-left: 40px;
+				    width: 78px;
+				    height: 33px;
+				    line-height: 33px;
+				    color: #fd4777;
+			    }
+		    }
+		    .down-pay-month{
+		    	width: 48px;
+			    height: auto;
+			    line-height: 60px;
+			    text-align: center;
+		    }
+		    .lease-product-sum{
+		    	width: 178px;
+		    	p{
+		    		padding-top: 18px;
+		    		span{
+		    			display: inline-block;
+					    margin-right: 8px;
+					    width: 80px;
+					    text-align: right;
+		    		}
+		    		i{
+		    			font-size:14px;
+		    		}
+		    	}
+		    }
+		    .product-handle{
+		    	width: 128px;
+		    	a{
+		    		display: block;
+				    padding-top: 18px;
+				    text-align: center;
+				    color: #666d71;
+		    	}
+		    	.goods-notice{
+		    		color: #36A3FE;
+		    	}
+		    }
+    	}
+    	.product-detail.on{
+    		background-color: #e0f1fe;
+    	}
+    	.product-rent-info{
+    		height: 50px;
+		    line-height: 50px;
+		    font-size: 12px;
+		    border-bottom: 1px solid #e9ebed;
+		    background-color: #f2faff;
+		    clear: both;
+		    .product-rent-month{
+		    	float: left;
+			    width: 500px;
+			    text-align: center;
+		    }
+		    .product-rent-date{
+		    	float: left;
+			    width: 330px;
+			    color: #666D71;
+			    span{
+			    	padding-left: 20px;
+			    }
+			    input{
+			    	padding: 0 4px;
+				    width: 146px;
+				    height: 26px;
+				    line-height: 26px;
+				    color: #666d71;
+				    text-indent: 16px;
+				    border: 1px solid #ccc;
+				    background: url(https://resources.edianzu.com/mall_new/20180116_1/images/pic_rl_03.png) 124px 6px no-repeat;
+			    }
+		    }
+    	}
+    }
+    .bill{
+    	margin: 8px 0;
+	    width: 1198px;
+	    height: 290px;
+	    color: #666D71;
+	    border: 1px solid #e9ebed;
+	    background-color: #f5f5f5;
+	    .bill-tit{
+	    	height: 30px;
+    		line-height: 30px;
+    		div{
+    			padding: 0 8px;
+    		}
+    		label{
+				padding-right: 6px;
+    		}
+    		a{
+    			padding: 0 6px;
+    			color: #666D71;
+    		}
+    		span{
+    			padding: 0 6px;
+    			color: #666D71;
+    			i{
+    				padding: 0 2px;
+    				color: #fe4979;
+    			}
+    		}
+	    }
+	    .bill-detail{
+		    height: 180px;
+		    line-height: 36px;
+		    font-size: 14px;
+		    li{
+		    	position: relative;
+		    	text-align:left !important;
+		    }
+		    span{
+		    	display: inline-block;
+			    width: 130px;
+			    text-align:right;
+		    }
+		    i{
+		    	display: inline-block;
+			    width: 100px;
+			    text-align:right;
+			    font-weight: 700;
+		    }
+		    b{
+		    	width: auto;
+		    	text-align:right;
+    			font-weight: 700;
+    			display: inline-block;
+		    }
+		    input{
+		    	position: absolute;
+			    left: 50%;
+			    top: 20px;
+			    margin-left: -69px;
+			    width: 138px;
+			    height: 38px;
+			    line-height: 38px;
+			    background: #37a3ff;
+			    color: #fff;
+			    font-size: 18px;
+			    text-align: center;
+			    border-radius: 3px;
+		    }
+	    }
+    }	
+}
+
+.product-detail{
+	background: #fff;
+    position: relative;
+}
+
 .no-goods{
+
 	padding: 100px 0 210px;
     text-align: center;
     p{
@@ -26,3 +369,4 @@
 	    margin-left: 60px;
 	}
 }
+

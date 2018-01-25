@@ -1,12 +1,12 @@
 /*主页业务逻辑页面*/
 require(["script/config.js"],function(){
-	require(["jquery","ajax","banner","floor","stairs"],function($,ajax,opt,floor,stari){
+	require(["jquery","ajax","banner","floor","stairs","shoppingcar"],function($,ajax,opt,floor,stari,shoppingcar){
 		//console.log($);
 		ajax.init();
 		opt.init();
 		floor.init();
 		stari.init();
 		stari.scroll();
-				
+		shoppingcar.init()		
 	})
 })

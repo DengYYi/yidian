@@ -7,9 +7,9 @@
 	Shopping.prototype = {
 		constructor:Shopping,
 		init:function(ele){
-			ele.on("mousedown",$.proxy(this.create,this))
 			ele.on("click",$.proxy(this.set_shop_itme,this))
-			
+			ele.on("mouseup",$.proxy(this.create,this))
+			$(".index-Hshopping span").html(this.get_shop_item()[0].num)
 		},
 		set_shop_itme:function(e){
 			var dataId = $(e.target).attr("data-id");
@@ -39,28 +39,29 @@
 				//建立一个结构;
 				$.cookie("shopping_car",'[{"id":"'+dataId+'","num":"1"}]')
 			}
-			console.log(this.get_shop_item());
-
+			console.log(this.get_shop_item()[0].num);
+			//$(".index-Hshopping span").html(this.get_shop_item()[0].num)
 		},	
 		get_shop_item:function(){
 			if($.cookie("shopping_car")){
 				return JSON.parse($.cookie("shopping_car"))
 			}
+
 		},
-		remove_shop_item:function(id){
-			var scookie = $.cookie("shopping_car");
-			if(scookie){
-				var acookie = JSON.parse(scookie);
-				/*bug** */
-				acookie.forEach(function(item,index){
-					if(item.id == id){
-						acookie.splice(index,1);
-					}
-				})
-			}
-			scookie = JSON.stringify(acookie);
-			$.cookie("shopping_car",scookie);
-		},
+		// remove_shop_item:function(id){
+		// 	var scookie = $.cookie("shopping_car");
+		// 	if(scookie){
+		// 		var acookie = JSON.parse(scookie);
+		// 		/*bug** */
+		// 		acookie.forEach(function(item,index){
+		// 			if(item.id == id){
+		// 				acookie.splice(index,1);
+		// 			}
+		// 		})
+		// 	}
+		// 	scookie = JSON.stringify(acookie);
+		// 	$.cookie("shopping_car",scookie);
+		// },
 		create:function(){
 			var $html = "<div class="+"success-tip animated fadeInUp"+">"+
 							"<div class="+'tip-content'+">商品已成功加入购物车！</div>"+

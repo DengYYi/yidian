@@ -68,3 +68,7 @@ i, a, span, b {
   font-size: 14px;
   color: #343434;
   line-height: 26px; }
+
+.box {
+  text-align: center;
+  padding: 100px 0; }
