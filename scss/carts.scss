@@ -1,0 +1,28 @@
+@import "reset" ;
+@import "mixin";
+.no-goods{
+	padding: 100px 0 210px;
+    text-align: center;
+    p{
+    	font-size: 16px;
+    	text-align: center;
+    	a{
+		    margin-left: 10px;
+		    color: #37a3ff;
+		    position: relative;
+		    img{
+		    	position:absolute;
+		    	padding-left: 8px;
+		    	top:-15px;
+		    	left:50px;
+		    }
+    	}
+    }
+}
+.header-index{
+	.fr{
+		position: relative;
+	    margin-top: 34px;
+	    margin-left: 60px;
+	}
+}

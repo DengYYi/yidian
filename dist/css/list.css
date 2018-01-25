@@ -1,0 +1,176 @@
+body, button, h1, h3, h2, h4, h5, h6, p, dl, dd, ul, li, ol, td, form, input, fieldset, legend {
+  margin: 0;
+  padding: 0; }
+
+html, body {
+  width: 100%; }
+
+li {
+  list-style: none; }
+
+a {
+  text-decoration: none;
+  font-size: 12px;
+  color: #000; }
+
+img {
+  display: block;
+  border: none; }
+
+a, input {
+  outline: none;
+  border: none; }
+
+button {
+  border: none; }
+
+em, i {
+  font-style: normal; }
+
+b, strong, h1, h2, h3, h4, h5, h6 {
+  font-weight: normal; }
+
+.clear:after {
+  content: "";
+  display: block;
+  clear: both;
+  height: 0;
+  visibility: hidden; }
+
+table {
+  border-collapse: collapse; }
+
+.border0 {
+  border: none; }
+
+.w {
+  width: 1200px;
+  height: 100%;
+  margin: 0 auto; }
+
+.fl {
+  float: left; }
+
+.fr {
+  float: right; }
+
+i, a, span, b {
+  display: inline-block; }
+
+.footer-list {
+  margin-right: 137px; }
+
+.footer-list-space {
+  margin-right: 72px; }
+
+.footer-tit {
+  margin-bottom: 18px;
+  font-size: 14px;
+  color: #343434;
+  line-height: 26px; }
+
+.product-list {
+  margin: 10px auto 0;
+  padding: 0 4px 4px;
+  width: 1212px;
+  height: auto;
+  overflow: hidden; }
+  .product-list .pro-list-con {
+    margin: 0 auto;
+    padding: 0 0 6px 6px;
+    width: 1212px;
+    height: auto; }
+    .product-list .pro-list-con .clearfix {
+      clear: both; }
+      .product-list .pro-list-con .clearfix li {
+        float: left;
+        margin-top: 20px;
+        box-sizing: border-box;
+        width: 300px;
+        height: auto; }
+        .product-list .pro-list-con .clearfix li a {
+          display: block;
+          padding: 10px 20px;
+          color: #000;
+          border: 1px solid #fff; }
+          .product-list .pro-list-con .clearfix li a img {
+            display: block;
+            margin: 0 auto 10px;
+            width: 230px;
+            height: 230px; }
+          .product-list .pro-list-con .clearfix li a h3 {
+            height: 66px;
+            line-height: 22px;
+            font-weight: 400;
+            font-size: 14px;
+            word-break: break-all;
+            overflow: hidden; }
+          .product-list .pro-list-con .clearfix li a span {
+            display: block;
+            width: 260px;
+            height: 44px;
+            line-height: 44px;
+            text-align: center; }
+            .product-list .pro-list-con .clearfix li a span strong {
+              font-size: 20px;
+              color: #e33a3c; }
+  .product-list .uc-paging {
+    width: auto;
+    height: 32px;
+    position: relative;
+    left: 50%;
+    margin: 12px 0; }
+    .product-list .uc-paging .paging-number {
+      height: 32px;
+      position: relative;
+      float: left;
+      left: -25%; }
+      .product-list .uc-paging .paging-number ul {
+        width: auto;
+        height: 32px; }
+        .product-list .uc-paging .paging-number ul li {
+          width: 30px;
+          height: 30px;
+          line-height: 30px;
+          border: 1px solid #eaeaea;
+          background-color: #fff;
+          margin: 0 5px;
+          float: left;
+          text-align: center; }
+          .product-list .uc-paging .paging-number ul li i {
+            display: inline-block;
+            vertical-align: middle;
+            position: absolute;
+            margin-left: -3px;
+            margin-top: -6px;
+            top: 50%; }
+          .product-list .uc-paging .paging-number ul li .icon-page-left {
+            background: url(../images/web.png) no-repeat -959px -115px;
+            width: 6px;
+            height: 12px; }
+          .product-list .uc-paging .paging-number ul li .icon-page-right {
+            background: url(../images/web.png) no-repeat -947px -115px;
+            width: 6px;
+            height: 12px; }
+      .product-list .uc-paging .paging-number .jump-ul li {
+        border: none; }
+      .product-list .uc-paging .paging-number .jump-ul .total-page {
+        border: none;
+        height: 30px;
+        line-height: 30px;
+        margin: 0 5px;
+        width: auto; }
+      .product-list .uc-paging .paging-number .jump-ul .total-input {
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        background-color: #fff;
+        padding: 0;
+        text-align: center;
+        border: 1px solid #eaeaea; }
+      .product-list .uc-paging .paging-number .jump-ul .total-button {
+        width: 60px;
+        height: 30px;
+        color: #fff;
+        background-color: #3da3e3;
+        cursor: pointer; }

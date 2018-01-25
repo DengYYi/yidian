@@ -1,0 +1,379 @@
+body, button, h1, h3, h2, h4, h5, h6, p, dl, dd, ul, li, ol, td, form, input, fieldset, legend {
+  margin: 0;
+  padding: 0; }
+
+html, body {
+  width: 100%; }
+
+li {
+  list-style: none; }
+
+a {
+  text-decoration: none;
+  font-size: 12px;
+  color: #000; }
+
+img {
+  display: block;
+  border: none; }
+
+a, input {
+  outline: none;
+  border: none; }
+
+button {
+  border: none; }
+
+em, i {
+  font-style: normal; }
+
+b, strong, h1, h2, h3, h4, h5, h6 {
+  font-weight: normal; }
+
+.clear:after {
+  content: "";
+  display: block;
+  clear: both;
+  height: 0;
+  visibility: hidden; }
+
+table {
+  border-collapse: collapse; }
+
+.border0 {
+  border: none; }
+
+.w {
+  width: 1200px;
+  height: 100%;
+  margin: 0 auto; }
+
+.fl {
+  float: left; }
+
+.fr {
+  float: right; }
+
+i, a, span, b {
+  display: inline-block; }
+
+.footer-list {
+  margin-right: 137px; }
+
+.footer-list-space {
+  margin-right: 72px; }
+
+.footer-tit {
+  margin-bottom: 18px;
+  font-size: 14px;
+  color: #343434;
+  line-height: 26px; }
+
+.product {
+  background: #fff;
+  position: relative; }
+  .product .info-box {
+    box-sizing: border-box;
+    margin: 0 auto;
+    width: 1200px;
+    border: 1px solid #dbdbdb;
+    overflow: hidden; }
+    .product .info-box .left-panel {
+      width: 420px;
+      border-right: 1px solid #dbdbdb;
+      float: left;
+      position: relative; }
+      .product .info-box .left-panel .big-img {
+        position: relative;
+        overflow: hidden;
+        padding: 0 20px;
+        width: 380px;
+        height: 380px;
+        border-bottom: 1px solid #dbdbdb; }
+        .product .info-box .left-panel .big-img .wrap {
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          top: 0;
+          left: 0;
+          z-index: 1000; }
+        .product .info-box .left-panel .big-img img {
+          border: none;
+          vertical-align: top; }
+        .product .info-box .left-panel .big-img .grayBox {
+          position: absolute;
+          z-index: 10;
+          border: none;
+          cursor: move;
+          background: rgba(57, 161, 234, 0.4);
+          opacity: .5; }
+      .product .info-box .left-panel .big {
+        position: absolute;
+        top: 1px;
+        left: 420px;
+        z-index: 100;
+        display: none;
+        overflow: hidden;
+        width: 500px;
+        height: 500px;
+        border: 1px solid #dbdbdb;
+        text-align: center; }
+        .product .info-box .left-panel .big img {
+          width: 800px;
+          height: 800px;
+          position: absolute;
+          left: -150px;
+          top: -150px; }
+      .product .info-box .left-panel .small-img-box {
+        overflow: hidden;
+        padding: 6px 20px 0;
+        width: 380px;
+        height: 76px; }
+        .product .info-box .left-panel .small-img-box .control {
+          width: 38px;
+          height: 76px;
+          float: left; }
+        .product .info-box .left-panel .small-img-box .small-img-list {
+          position: relative;
+          float: left;
+          display: inline;
+          overflow: hidden;
+          margin: 0;
+          width: 304px;
+          height: 76px; }
+      .product .info-box .left-panel .info-tag {
+        overflow: hidden;
+        margin: 30px 20px 10px;
+        text-align: center;
+        width: 380px;
+        height: 40px; }
+        .product .info-box .left-panel .info-tag img {
+          width: 80px;
+          height: 40px;
+          margin-right: 5px;
+          display: inline-block;
+          vertical-align: top; }
+      .product .info-box .left-panel .repair-service {
+        padding: 10px 20px;
+        width: 380px;
+        height: auto;
+        line-height: 24px;
+        text-align: left;
+        font-size: 14px; }
+        .product .info-box .left-panel .repair-service h2 {
+          height: 24px;
+          line-height: 24px;
+          text-align: left;
+          font-weight: 700; }
+        .product .info-box .left-panel .repair-service strong {
+          color: #e33a3c; }
+    .product .info-box .right-panel {
+      position: relative;
+      overflow: hidden;
+      padding: 15px 20px 20px 40px;
+      width: 714px; }
+      .product .info-box .right-panel h3 {
+        font-size: 14px;
+        font-weight: normal; }
+      .product .info-box .right-panel p {
+        color: #eb343f;
+        font-size: 14px; }
+      .product .info-box .right-panel .price-content {
+        height: 40px;
+        line-height: 40px;
+        border-bottom: 1px solid #dbdbdb; }
+        .product .info-box .right-panel .price-content span {
+          margin: 0 6px;
+          padding: 2px 4px;
+          background: #e33a3c;
+          color: #fff;
+          cursor: pointer;
+          font-size: 12px;
+          height: auto;
+          line-height: 16px; }
+        .product .info-box .right-panel .price-content strong {
+          color: #e33a3c;
+          font-size: 20px;
+          font-weight: bold; }
+      .product .info-box .right-panel .info-attr-box {
+        clear: both;
+        width: 717px; }
+        .product .info-box .right-panel .info-attr-box dl {
+          clear: both;
+          margin-top: 11px; }
+          .product .info-box .right-panel .info-attr-box dl dt {
+            float: left;
+            width: 87px;
+            height: 42px;
+            line-height: 42px;
+            margin-right: 10px;
+            text-align: right;
+            font-size: 12px; }
+          .product .info-box .right-panel .info-attr-box dl dd {
+            float: left;
+            width: 620px; }
+            .product .info-box .right-panel .info-attr-box dl dd .config-tag {
+              position: relative;
+              cursor: pointer;
+              float: left;
+              display: block;
+              margin: 6px 20px 0 0;
+              height: 32px;
+              line-height: 32px;
+              font-size: 12px;
+              box-sizing: border-box;
+              border: 1px solid #dbdbdb; }
+              .product .info-box .right-panel .info-attr-box dl dd .config-tag > a {
+                display: block;
+                padding: 0 10px;
+                width: 100%;
+                height: 100%; }
+              .product .info-box .right-panel .info-attr-box dl dd .config-tag img {
+                float: left;
+                margin: 3px 10px 0 0;
+                width: auto;
+                height: 24px; }
+            .product .info-box .right-panel .info-attr-box dl dd .rent-type-list {
+              width: 600px; }
+              .product .info-box .right-panel .info-attr-box dl dd .rent-type-list li {
+                font-size: 12px;
+                position: relative;
+                padding-left: 10px;
+                line-height: 28px;
+                margin: 10px 0 0 0; }
+                .product .info-box .right-panel .info-attr-box dl dd .rent-type-list li span {
+                  font-size: 12px; }
+                .product .info-box .right-panel .info-attr-box dl dd .rent-type-list li .checkbox {
+                  display: inline-block;
+                  width: 12px;
+                  height: 12px;
+                  cursor: pointer;
+                  background: url(https://resources.edianzu.com/mall_new/20180116_1/images/rent-tick.png); }
+                .product .info-box .right-panel .info-attr-box dl dd .rent-type-list li .rent-months {
+                  height: auto;
+                  line-height: 19px;
+                  color: #e33a3c;
+                  text-align: center;
+                  font-weight: 700; }
+                .product .info-box .right-panel .info-attr-box dl dd .rent-type-list li .fixed-repay {
+                  margin-right: 5px;
+                  padding: 0 4px 1px 7px;
+                  border-top-right-radius: 10px;
+                  border-bottom-left-radius: 10px;
+                  font-size: 10px;
+                  cursor: pointer;
+                  height: 16px;
+                  line-height: 16px;
+                  background: #ffac13;
+                  color: #fff; }
+                .product .info-box .right-panel .info-attr-box dl dd .rent-type-list li .rent-tip {
+                  padding: 0 8px;
+                  border: 1px solid #dbdbdb;
+                  border-radius: 4px; }
+                .product .info-box .right-panel .info-attr-box dl dd .rent-type-list li .rent-recommended {
+                  height: 20px;
+                  line-height: 20px;
+                  margin-left: 5px;
+                  padding: 0 5px;
+                  border: 1px solid #e33a3c;
+                  border-radius: 4px;
+                  color: #e33a3c; }
+            .product .info-box .right-panel .info-attr-box dl dd .date-input {
+              width: 200px;
+              height: 32px;
+              line-height: 32px;
+              color: #666;
+              border: 1px solid #dbdbdb;
+              padding: 0 10px;
+              margin-top: 7px;
+              box-sizing: border-box; }
+            .product .info-box .right-panel .info-attr-box dl dd .count-box {
+              float: left;
+              height: 42px;
+              line-height: 42px; }
+              .product .info-box .right-panel .info-attr-box dl dd .count-box .put {
+                width: 32px;
+                height: 32px;
+                line-height: 28px;
+                font-size: 20px;
+                background: #eee;
+                border: 1px solid #dbdbdb;
+                float: left;
+                display: block;
+                cursor: pointer;
+                color: #798693;
+                box-sizing: border-box;
+                text-align: center;
+                margin-top: 5px; }
+              .product .info-box .right-panel .info-attr-box dl dd .count-box input {
+                margin-top: 5px;
+                padding: 0 10px;
+                line-height: 30px;
+                height: 30px;
+                float: left;
+                width: 40px;
+                text-align: center;
+                border: 1px solid #e9ebed; }
+            .product .info-box .right-panel .info-attr-box dl dd .deposit-box {
+              font-size: 12px;
+              margin: 10px 0; }
+              .product .info-box .right-panel .info-attr-box dl dd .deposit-box p {
+                color: #000;
+                font-size: 12px;
+                height: 24px;
+                line-height: 24px; }
+                .product .info-box .right-panel .info-attr-box dl dd .deposit-box p .money {
+                  color: #e33a3c;
+                  font-weight: bold; }
+                .product .info-box .right-panel .info-attr-box dl dd .deposit-box p .can-used-deposit-amount a {
+                  color: #37a3ff; }
+          .product .info-box .right-panel .info-attr-box dl .service-dd .config-tag {
+            padding: 0 10px !important;
+            position: relative;
+            cursor: pointer;
+            float: left;
+            display: block;
+            margin: 6px 20px 0 0;
+            height: 32px;
+            line-height: 32px;
+            font-size: 12px;
+            box-sizing: border-box;
+            border: 1px solid #dbdbdb; }
+      .product .info-box .right-panel .info-btn-box {
+        clear: both;
+        margin-top: 6px;
+        border-top: 1px solid #dbdbdb;
+        line-height: 50px; }
+        .product .info-box .right-panel .info-btn-box .rent-price {
+          height: 50px;
+          line-height: 50px; }
+          .product .info-box .right-panel .info-btn-box .rent-price strong {
+            font-size: 24px;
+            color: #e33a3c; }
+        .product .info-box .right-panel .info-btn-box .submit-btn {
+          width: auto;
+          height: 36px;
+          line-height: 36px;
+          background: #37a3ff;
+          color: #fff;
+          font-size: 18px;
+          text-align: center;
+          border-radius: 3px;
+          padding: 0 16px;
+          margin-right: 16px; }
+        .product .info-box .right-panel .info-btn-box .add-to-cart-btn {
+          width: auto;
+          height: 36px;
+          line-height: 36px;
+          background: #e33a3c;
+          color: #fff;
+          font-size: 18px;
+          text-align: center;
+          border-radius: 3px;
+          background-image: url(https://resources.edianzu.com/mall_new/20180116_1/images/gouwu_car_03.png);
+          background-repeat: no-repeat;
+          background-position: 14px center;
+          padding: 0 16px 0 44px;
+          margin-right: 16px; }
+        .product .info-box .right-panel .info-btn-box a {
+          color: #000; }

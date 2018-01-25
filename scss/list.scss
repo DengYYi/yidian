@@ -1,0 +1,129 @@
+@import "reset" ;
+@import "mixin";
+.product-list{
+	margin: 10px auto 0;
+    padding: 0 4px 4px;
+    width: 1212px;
+    height: auto;
+    overflow: hidden;
+    .pro-list-con{
+    	margin: 0 auto;
+	    padding: 0 0 6px 6px;
+	    width: 1212px;
+	    height: auto;
+	    .clearfix{
+	    	clear:both;
+	    	li{
+	    		float:left;
+			    margin-top: 20px;
+			    box-sizing: border-box;
+			    width: 300px;
+			    height: auto;
+			    a{
+			    	display: block;
+				    padding: 10px 20px;
+				    color: #000;
+				    border: 1px solid #fff;
+				    img{
+				    	display: block;
+					    margin: 0 auto 10px;
+					    width: 230px;
+					    height: 230px;
+				    }
+				    h3{
+				    	height: 66px;
+					    line-height: 22px;
+					    font-weight: 400;
+					    font-size: 14px;
+					    word-break: break-all;
+					    overflow: hidden;
+				    }
+				    span{
+				    	display: block;
+					    width: 260px;
+					    height: 44px;
+					    line-height: 44px;
+					    text-align: center;
+					    strong{
+					    	font-size: 20px;
+    						color: #e33a3c;
+					    }
+				    }
+			    }
+	    	}
+	    }
+    }
+    .uc-paging{
+    	width: auto;
+	    height: 32px;
+	    position: relative;
+	    left: 50%;
+	    margin: 12px 0;
+	    .paging-number{
+	    	height: 32px;
+		    position: relative;
+		    float:left;
+		    left:-25%;
+		    ul{
+		    	width: auto;
+    			height: 32px;
+    			li{
+    				width: 30px;
+				    height: 30px;
+				    line-height: 30px;
+				    border: 1px solid #eaeaea;
+				    background-color: #fff;
+				    margin: 0 5px;
+				    float:left;
+				    text-align:center;
+				    i{
+		    			display: inline-block;
+					    vertical-align: middle;
+					    position: absolute;
+					    margin-left: -3px;
+					    margin-top: -6px;
+					    top:50%;
+		    		}
+		    		.icon-page-left{
+						background:$bgi -959px -115px;
+					    width: 6px;
+					    height: 12px;
+		    		}
+		    		.icon-page-right{
+		    			background:$bgi -947px -115px;
+					    width: 6px;
+					    height: 12px;
+		    		}
+    			}
+		    }
+		    .jump-ul{
+		    	li{
+		    		border:none;
+		    	}
+				.total-page{
+					border:none;
+					height: 30px;
+				    line-height: 30px;
+				    margin: 0 5px;
+				    width:auto;
+				}
+				.total-input{
+					width: 30px;
+				    height: 30px;
+				    line-height: 30px;
+				    background-color: #fff;
+				    padding: 0;
+				    text-align: center;
+				    border: 1px solid #eaeaea;
+				}
+				.total-button{
+					width: 60px;
+				    height: 30px;
+				    color: #fff;
+				    background-color: #3da3e3;
+				    cursor: pointer;
+				}
+		    }
+	    }
+    }
+}
