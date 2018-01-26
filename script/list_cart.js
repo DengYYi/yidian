@@ -9,21 +9,22 @@
 			var _this = this
 
 			//console.log(this.get_shop_item()[0].num)
-			if($(".index-Hshopping span")){
-				$(".index-Hshopping span").html(this.get_shop_item()[0].num)	
-			}
-			if($(".ipt-num")){
-				$(".ipt-num").val(this.get_shop_item()[0].num)	
-				console.log($(".ipt-num"),$(".num-add"),this.get_shop_item()[0].num)
-				$(".num-add").on("click",function(){
-					if($.cookie("shopping_car")){
-						_this.get_shop_item()[0].num = _this.get_shop_item()[0].num + 1;
-						return $(".ipt-num").val(_this.get_shop_item()[0].num);
-					}
-				})
+			if($.cookie("shopping_car")){
+				if($(".index-Hshopping span")){
+					$(".index-Hshopping span").html(this.get_shop_item()[0].num)	
+				}
+				if($(".ipt-num")){
+					$(".ipt-num").val(this.get_shop_item()[0].num)	
+					console.log($(".ipt-num"),$(".num-add"),this.get_shop_item()[0].num)
+					$(".num-add").on("click",function(){
+						if($.cookie("shopping_car")){
+							_this.get_shop_item()[0].num = _this.get_shop_item()[0].num + 1;
+							return $(".ipt-num").val(_this.get_shop_item()[0].num);
+						}
+					})
 
+				}
 			}
-
 			
 		},
 		get_shop_item:function(){
@@ -34,7 +35,7 @@
 		},
 		add:function(){
 			if($.cookie("shopping_car")){
-				this.get_shop_item()[0].num = this.get_shop_item()[0].num + 1;
+				this.get_shop_item()[0].num ++;
 				return $(".ipt-num").val(this.get_shop_item()[0].num);
 			}
 		},
@@ -43,14 +44,14 @@
 				$(".shopping-cart").css({
 					display:'block'
 				})
-				$(".goods").css({
+				$(".no-goods").css({
 					display:'none'
 				})
 			}else{
 				$(".shopping-cart").css({
 					display:'none'
 				})
-				$(".goods").css({
+				$(".no-goods").css({
 					display:'block'
 				})
 			}

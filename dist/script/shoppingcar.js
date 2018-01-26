@@ -4,9 +4,11 @@ define(["jquery","cookie"],function(){
 	Shopping.prototype = {
 		constructor:Shopping,
 		init:function(){
-			console.log(this.get_shop_item()[0].num)
-			$(".index-Hshopping span").html(this.get_shop_item()[0].num)	
-			
+			if ($.cookie("shopping_car")) {
+				console.log(this.get_shop_item()[0].num)
+
+				$(".index-Hshopping span").html(this.get_shop_item()[0].num)	
+			}
 		},
 		set_shop_itme:function(e){
 			var dataId = $(e.target).attr("data-id");
