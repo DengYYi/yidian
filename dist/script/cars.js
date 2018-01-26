@@ -7,6 +7,7 @@
 	Shopping.prototype = {
 		constructor:Shopping,
 		init:function(ele){
+			//console.log(this.get_shop_item()[0].num)
 			ele.on("click",$.proxy(this.set_shop_itme,this))
 			ele.on("mouseup",$.proxy(this.create,this))
 			$(".index-Hshopping span").html(this.get_shop_item()[0].num)

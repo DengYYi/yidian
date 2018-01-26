@@ -31,11 +31,11 @@ define(["jquery"],function(){
 				//console.log(i);			
 				$($html).appendTo($(".loop_logo"))
 			}
-			this.next()
-			this.prev()
+			let index = 0;
+			this.next(0)
+			this.prev(0)
 			let timer;
 			let _this = this
-			let index = 0;
 			let out = 0;
 			timer = setInterval(function(){
 				
@@ -44,7 +44,6 @@ define(["jquery"],function(){
 				}else{
 					index ++;
 				}
-				console.log('')
 				let $width = $(".loop_logo li").width();
 				//入场元素
 				$(".loop_logo li").eq(index).css({
@@ -77,12 +76,12 @@ define(["jquery"],function(){
 			}, 5000)
 
 		},
-		next:function(){
-			let index = 0;
+		next:function(index){
 			let out = 0;
 
 			$(".banner-next").on("click",function(){
 				if (index == $(".loop_logo li").length-1) {
+					
 					index = 0;
 				}else{
 					index ++;
@@ -102,7 +101,7 @@ define(["jquery"],function(){
 
 				//出场元素
 				if (index == 0) {
-					out = $(".loop_logo li").length-1
+					out = $(".loop_logo li").length - 1
 				}else{
 					out = index - 1
 				}
@@ -119,9 +118,9 @@ define(["jquery"],function(){
 				console.log(index,out)
 			})
 		},
-		prev:function(){
-			let index = 0;
+		prev:function(index){
 			let out = 0;
+			let approach =0;
 
 			$(".banner-prev").on("click",function(){
 				if (index == $(".loop_logo li").length-1) {
